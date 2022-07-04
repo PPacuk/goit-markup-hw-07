@@ -1,0 +1,33 @@
+.description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71428571;
+  color: #757575;
+  margin-top: 10px;
+  margin-bottom: 94px;
+  width: 270px;
+  height: 75px;
+}
+.descriptionbox {
+  box-sizing: border-box;
+  width: 370px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 0px;
+  top: -70px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}

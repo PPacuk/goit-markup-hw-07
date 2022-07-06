@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -14,35 +14,33 @@
   </head>
 
   <body>
-    <header class="contact">
-      <div class="containerflex">
-        <a class="banner" href="https://ppacuk.github.io/web-studio/"
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="https://ppacuk.github.io/web-studio/"
           ><span class="highlight">Web</span>Studio</a
         >
-        <nav>
-          <ul class="menu"> 
-            <li class="menuitem">
-              <a class="link active" href="./index.html">Agencja</a>
+        <nav class="navigationmenu__">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link active" href="./index.html">Agencja</a>
             </li>
-            <li class="menuitem">
-              <a class="link" href="./portfolio.html"> Portfolio</a>
+            <li class="menu__item">
+              <a class="menu__link" href="./portfolio.html"> Portfolio</a>
             </li>
-            <li class="menuitem">
-              <a class="link" href="">Kontakt</a>
+            <li class="menu__item">
+              <a class="menu__link" href="">Kontakt</a>
             </li>
           </ul>
         </nav>
-        <ul class="menu">
-          <li class="menuadress">
-            <a class="adress" href="mailto:info@devstudio.com">
+        <ul class="contact">
+          <li class="contact__adress">
+            <a class="contact__link" href="mailto:info@devstudio.com">
               <svg class="mail-icon" width="16px" height="12px">
                 <use href="image/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
+              </svg>info@devstudio.com</a>
           </li>
-          <li class="menuadress phone-icon">
-            <a class="adress" href="tel:+48111111111">
+          <li class="contact__adress">
+            <a class="contact__link" href="tel:+48111111111">
               <svg class="phone-icon" width="10px" height="16px">
                 <use href="image/icons.svg#icon-phone"></use>
               </svg>
@@ -400,19 +398,20 @@
         </div>
         <div class="newsletter">
           <h3 class="newsletter__name">Zapisz się do newslettera</h3>
-        </div>
-        <div class="signup">
-          <form class="signup__form">
-            <label class="signup__email">
-              <input class="signup__input" type="email" name="email" placeholder="E-mail" />
-            </label>
-            <button class="signup__btn" type="submit">
+        
+          <div class="signup">
+            <form class="signup__form">
+              <label class="signup__email">
+                <input class="signup__input" type="email" name="email" placeholder="E-mail" />
+              </label>
+              <button class="signup__btn" type="submit">
               Zapisz się
-              <svg class="signup__icon">
-                <use href="./image/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+                <svg class="signup__icon">
+                  <use href="./image/icons.svg#icon-send"></use>
+                </svg>
+              </button>
           </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -421,36 +420,32 @@
       <div class="modal-animate">
         <div class="modal">
           <span class="modal__head">Zostaw swoje dane w formularzu poniżej</span>
-          <form class="form">
-            <label class="modal-name"
-              ><span class="surname">Imie</span>
+          <form class="form" autocomplete="on" novalidate>
+            <label class="form-label"
+              ><span class="label-text">Imie</span>
               <svg class="name-icon-modal">
                 <use class="name-link" href="./image/icons.svg#icon-modal-person"></use>
               </svg>
-              <input type="text" name="name" class="modal-input" />
+              <input type="text" name="name" class="modal-input" required/>
             </label>
-            <label class="modal-name"
-              ><span class="phonenr">Telefon</span>
+            <label class="form-label"
+              ><span class="label-text">Telefon</span>
               <svg class="phone-icon-modal">
                 <use class="name-link" href="./image/icons.svg#icon-modal-phone"></use>
               </svg>
-              <input type="tel" name="phone" class="modal-input" />
+              <input type="tel" name="phone" class="modal-input" required/>
             </label>
-            <label class="modal-name"
-              ><span class="email-modal">Email</span>
+            <label class="form-label"
+              ><span class="label-text">Email</span>
               <svg class="email-icon-modal">
                 <use class="name-link" href="./image/icons.svg#icon-modal-mail"></use>
               </svg>
-              <input type="email" name="email" class="modal-input" />
+              <input type="email" name="email" class="modal-input" required/>
             </label>
-            <label class="modal-name"
-              ><span class="comment-modal">Komentarz</span>
-              <textarea
-                name="comment"
-                class="comment-input"
-                rows="4"
-                placeholder="Wprowadź tekst"
-              ></textarea>
+            <label class="form-label">
+              <span class="label-text">Komentarz</span>
+              <textarea name="comment" class="comment-input" rows="4" placeholder="Wprowadź tekst">
+              </textarea>
             </label>
             <input
               class="modal-form-policy visually-hidden"
@@ -458,15 +453,13 @@
               type="checkbox"
               name="policy"
             />
-            <label for="user-policy" class="modal-form-policy-text"
-              ><span class="statement"
+            <label for="user-policy" class="modal-form-policy-text">
+              <span class="statement"
                 >Oświadczam iż akceptuję <a href="#" class="statute">Regulamin</a> i
-                <a href="#" class="statute">Politykę Prywatności.</a></span
-              ></label
-            >
-            <label>
-              <input class="submit-btn" type="submit" value="Wyślij" />
+                <a href="#" class="statute">Politykę Prywatności.</a>
+              </span>
             </label>
+              <button class="submit-btn" type="submit"/>Wyślij</button>
           </form>
           <svg class="close-btn" data-modal-close>
             <use href="./image/icons.svg#icon-close"></use>

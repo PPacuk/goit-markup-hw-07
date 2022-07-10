@@ -1,7 +1,6 @@
 .signup {
   margin-top: 20px;
-}
-.signup__input {
+&__input {
   box-sizing: border-box;
   width: 358px;
   height: 50px;
@@ -18,13 +17,14 @@
   outline: none;
   color: #eeeeee;
 }
-.signup__icon {
+&__icon {
   width: 24px;
   height: 24px;
   position: relative;
   top: 7px;
   left: 14px;
 }
-.signup__form {
+&__form {
   display: flex;
+}
 }

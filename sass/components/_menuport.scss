@@ -1,11 +1,12 @@
-.menuport__list {
+.menuport{
+&__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 94px;
 }
-.menuport__btn {
+&__btn {
   cursor: pointer;
   font-family: 'Roboto';
   font-style: normal;
@@ -19,8 +20,9 @@
   padding: 6px 22px;
   border-radius: 4px;
 }
-.menuport__btn:hover,
-.menuport__btn:focus {
+&__btn:hover,
+&__btn:focus {
   background-color: #2196f3;
   color: #ffffff;
+}
 }

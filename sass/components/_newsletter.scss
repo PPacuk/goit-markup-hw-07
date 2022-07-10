@@ -2,8 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   width: 570px;
-}
-.newsletter__name {
+
+&__name {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -15,4 +15,5 @@
   width: 207px;
   margin-top: 12px;
   position: relative;
+}
 }

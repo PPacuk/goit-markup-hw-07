@@ -2,8 +2,8 @@
   display: flex;
   margin-top: 94px;
   justify-content: space-between;
-}
-.features__description {
+
+&__description {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -15,7 +15,7 @@
   width: 270px;
   height: 75px;
 }
-.features__title {
+&__title {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -25,7 +25,8 @@
   width: 270px;
   height: 16px;
 }
-.features__icon {
+&__icon {
   width: 70px;
   height: 70px;
+}
 }

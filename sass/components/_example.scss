@@ -1,12 +1,12 @@
 .example {
   margin-bottom: 94px;
   margin-top: 50px;
-}
-.example__box {
+
+&__box {
   position: relative;
   overflow: hidden;
 }
-.example__overlay {
+&__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,10 +26,11 @@
   width: 301px;
   height: 196px;
 }
-.example__box:hover,
-.example__img:hover .example__overlay {
+&__box:hover,
+&__img:hover .example__overlay {
   transform: translateY(0);
-}.example__list {
+}
+&__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -37,18 +38,18 @@
   justify-content: space-between;
 }
 
-.example__img {
+&__img {
   margin: 0px;
   border: 1px solid rgba(238, 238, 238, 1);
 }
-.example__img:hover,
-.example__img:hover figure .example__img {
+&__img:hover,
+&__img:hover figure .example__img {
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
-.example__title {
+&__title {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -58,7 +59,7 @@
   margin-left: 24px;
   margin-top: 20px;
 }
-.example__description {
+&__description {
   font-family: 'Roboto';
   font-style: normal;
   font-size: 16px;
@@ -66,4 +67,6 @@
   color: #757575;
   text-align: left;
   margin-left: 24px;
+}
+
 }

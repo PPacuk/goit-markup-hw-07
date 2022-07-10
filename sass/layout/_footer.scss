@@ -3,10 +3,11 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.footer > .containerflex {
+
+& > .containerflex {
   justify-content: flex-start;
   gap: 70px;
   align-items: center;
   padding-bottom: 60px;
+}
 }

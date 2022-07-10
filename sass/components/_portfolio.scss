@@ -1,16 +1,15 @@
-.description {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71428571;
-  color: #757575;
-  margin-top: 10px;
+.portfolio__list {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 94px;
-  width: 270px;
-  height: 75px;
 }
-.descriptionbox {
+.portfolio__item {
+  width: 370px;
+  height: 294px;
+  box-sizing: border-box;
+  position: static;
+}
+.portfolio__description-box {
   box-sizing: border-box;
   width: 370px;
   height: 70px;
@@ -30,4 +29,13 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
+}
+.portfolio__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16666667;
+  text-align: center;
+  margin-bottom: 50px;
 }

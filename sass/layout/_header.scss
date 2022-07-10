@@ -1,25 +1,20 @@
-.contact {
+.header .container {
+  display: flex;
+  justify-content: space-around;
+}
+.header {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14285714;
-  border: 1px solid rgba(236, 236, 236, 1);
-}
-.contact-adress {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14285714;
-  margin-top: 20px;
-}
 
-.active::after {
-  content: '';
-  display: block;
-  border-bottom: 2px solid;
-  position: relative;
-  top: 33px;
-  color: #2196f3;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.header .contact__adress:first-child {
+  margin-left: 93px;
+}
+.header .contact__adress:last-child {
+  margin-left: 50px;
 }
